@@ -1,0 +1,418 @@
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/4f17b5c1a5.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-family: 'Inter', sans-serif;
+    }
+
+    body{
+        background-color: rgb(15,22,36);
+        color: aliceblue;
+        margin: 30px 100px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    nav .start{
+        display: inline-block;
+        
+    }
+    .start a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 25px;
+
+    }
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+    .icon{
+        font-size: 20px;
+    }
+    .name{
+        padding: 20px 10px;
+        display: flex;
+    }
+    h1{
+        font-weight: 600;
+        font-size: 64px;
+    }
+    .name p {
+        font-weight: 600;
+        font-size: 36px;
+        padding-left:50px  ;
+    }
+    .name span{
+        color: #13ADC7;
+    }
+    .name button {
+        padding: 15px 40px;
+        font-size: 15px;
+        border-radius: 25px;
+        color: white;
+        background: linear-gradient(#945DD6, #6A77D1, #13ADC7);
+        margin-left: 45px;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 64px; 
+    }
+    .project{
+
+    }
+    .card-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cards{
+        border: white 2px solid;
+        width: 20%;
+        padding: 15px;
+        border-radius: 40px 10px;
+    }
+    .cards img {
+        width: 100%;
+    }
+    h3 {
+        font-size: 36px;
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .cards hr {
+     background: linear-gradient(#945DD6, #6A77D1, #13ADC7);
+     height: 2px;
+     border: none;
+     width: 50%;
+    }
+    .cards p{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .cards button{
+        padding: 18px 40px;
+        font-size: 20px;
+        border-radius: 25px;
+        color: white;
+        background: linear-gradient(#945DD6, #6A77D1, #13ADC7);
+    }
+
+    .technologies{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        padding: 0px 100px;
+    }
+    .name-technologies{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+    }
+    h4{
+        font-weight: 600;
+        font-size: 36px;
+        margin: 0;
+        
+    }
+    .name-technologies span {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .progress-bar{
+        background-color:  #162950;
+        margin: 0px 0px;
+        height: 15px;
+        border-radius: 8px;
+        display: flex;
+        align-self: center;
+        width: 60%;
+    }
+    .progress-bar .html {
+        height: 15px;
+        border-radius: 8px;
+        width: 100%;
+        background: linear-gradient(#945DD6, #6A77D1, #13ADC7);
+    }
+    .css{
+        height: 15px;
+        border-radius: 8px;
+        width: 100%;
+        background: linear-gradient(#945DD6, #6A77D1, #13ADC7);
+
+    }
+    .js{
+        height: 15px;
+        border-radius: 8px;
+        width: 75%;
+        background: linear-gradient(#945DD6, #6A77D1, #13ADC7);
+    }
+    .react{
+        height: 15px;
+        border-radius: 8px;
+        width: 50%;
+        background: linear-gradient(#945DD6, #6A77D1, #13ADC7);
+    }
+    .vujs{
+        height: 15px;
+        border-radius: 8px;
+        width: 50%;
+        background: linear-gradient(#945DD6, #6A77D1, #13ADC7);
+    }
+    .web{
+        height: 15px;
+        border-radius: 8px;
+        width: 50%;
+        background: linear-gradient(#945DD6, #6A77D1, #13ADC7)
+    }
+    .figma{
+        height: 15px;
+        border-radius: 8px;
+        width: 50%;
+        background: linear-gradient(#945DD6, #6A77D1, #13ADC7)
+    }
+    .skills-list{
+        font-weight: 600;
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+        padding: 0px 150px;
+        justify-content: space-between;
+
+    }
+    .about-line{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .timeline{
+        width: 90%;
+        height: 10px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    .timeline div {
+        padding: 10px;
+        border-radius: 50%;
+        border:#13ADC7 1px solid;
+        background: linear-gradient(#945DD6, #6A77D1, #13ADC7);
+    }
+    
+
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="start">
+                <img src="./images/logo.svg" alt="logo">
+                <a href="#">Okpere Clinton Ose</a>
+            </div>
+            <ul>
+                <li>Project</li>
+                <li>Technologies</li>
+                <li>About me</li>
+            </ul>
+            <div class="icon">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="name">
+            <div>
+            <h1>Okpere Clinton Ose</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione recusandae reprehenderit totam cupiditate inventore repellendus, unde voluptatibus asperiores possimus hic iusto eligendi eum nam explicabo in laboriosam ipsum animi iste?<span>UX/UI</span></p>
+            <button>Let's Begin</button>
+            </div>
+            
+            <div>
+                <img src="./images/drawing.svg" alt="">
+            </div>
+        </section>
+
+        <section class="project">
+            <h2>Projects</h2>
+            <div class="card-container">
+                <div class="cards">
+                    <img src="./images/image 1.svg" alt="project1">
+                    <h3>Project 1</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum rerum n
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusamus tenetur 
+                    </p>
+                    <button>
+                     <a href="https://fantastic-crostata-b7d64a.netlify.app">look it up</a>    
+                    </button>
+                </div>
+    
+                <div class="cards">
+                    <img src="./images/image 1.svg" alt="project1">
+                    <h3>Project 1</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum rerum n
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusamus tenetur 
+                    </p>
+                    
+                    <button>
+                        <a href="https://silver-fairy-db6384.netlify.app/">look it up</a>
+                        
+                    </button>
+                </div>
+    
+                <div class="cards">
+                    <img src="./images/image 1.svg" alt="project1">
+                    <h3>Project 1</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum rerum n
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusamus tenetur 
+                    </p>
+                    <button>
+                        look it up
+                    </button>
+                </div>
+            </div>
+
+            <!-- <div class="cards">
+                <img src="./images/image 1.svg" alt="project1">
+                <h3>Project 1</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum rerum n
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusamus tenetur 
+                </p>
+                <button>
+                    look it up
+                </button>
+            </div>
+        </div> -->
+
+            
+        </section>
+
+        <section class="technologies">
+            <h2>Technologies</h2>
+            <div class="name-technologies">
+                <h4>Html </h4>
+                <span>advanced</span>
+            </div>
+            <div class="progress-bar">
+                <div class="html"><span></span></div>
+            </div>
+            <div class="name-technologies">
+                <h4>Css , scass , bootstrap </h4>
+                <span>advanced</span>
+            </div>
+            <div class="progress-bar">
+                <div class="css"><span></span></div>
+            </div>
+            <div class="name-technologies">
+                <h4>Javascritpts </h4>
+                <span>advanced</span>
+            </div>
+            <div class="progress-bar">
+                <div class="js"><span></span></div>
+            </div>
+            <div class="name-technologies">
+                <h4>React</h4>
+                <span>advanced</span>
+            </div>
+            <div class="progress-bar">
+                <div class="react"><span></span></div>
+            </div>
+            <div class="name-technologies">
+                <h4>Vujs</h4>
+                <span>advanced</span>
+            </div>
+            <div class="progress-bar">
+                <div class="vujs"><span></span></div>
+            </div>
+            <div class="name-technologies">
+                <h4>Web-accessbility </h4>
+                <span>advanced</span>
+            </div>
+            <div class="progress-bar">
+                <div class="web"><span></span></div>
+            </div>
+            <div class="name-technologies">
+                <h4>UI/UX , figma </h4>
+                <span>begin</span>
+            </div>
+            <div class="progress-bar">
+                <div class="figma"><span></span></div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Additional technologies and skills</h2>
+            <div class="skills-list">
+                <ul>
+                    <li>Git</li>
+                    <li>Quick-learner</li>
+                    <li>Team work</li>
+                    <li>Quick-learner</li> 
+                </ul>
+    
+                <ul>
+                    <li>Open source-programer</li>
+                    <li>Team work</li>
+                    <li>Quick-learner</li>
+                </ul>
+                    
+                <ul>
+                    <li>Web-accessbility</li>
+                </ul>
+            </div>
+           
+        </section>
+
+        <section class="about">
+            <h2>About-Me</h2>
+            <div class="about-line">
+                <div class="timeline">
+                    <div class="start"></div>
+                    <div class="mid"></div>
+                    <div class="2022"></div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="contact">
+            <h3>
+                Call-me: <p>07040273782</p>
+            </h3>
+            <h3>
+                Email: <p>Clintonokpere99@gmail.com</p>
+            </h3>
+        </div>
+        
+        <div class="side">
+
+        </div>
+    </footer>
+</body>
+</html>
